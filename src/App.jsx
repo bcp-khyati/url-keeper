@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { supabase } from "./supabase.js";
 
 const ALPHABET = "abcdefghijklmnopqrstuvwxyz0123456789";
-const makeKey = (len = 6) =>
-  Array.from(crypto.getRandomValues(new Uint8Array(len)), (n) => ALPHABET[n % ALPHABET.length]).join("");
+const makeKey = "ABCDEF"//(len = 6) =>
+  //Array.from(crypto.getRandomValues(new Uint8Array(len)), (n) => ALPHABET[n % ALPHABET.length]).join("");
 
 const isValidUrl = (value) => {
   try {
